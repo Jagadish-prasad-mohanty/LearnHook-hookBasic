@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ArrayUse from './Components/ArrayUse';
+import ChangeWithInput from './Components/ChangeWithInput';
+import Object from './Components/ObjectCom';
+import ToggleBetween from './Components/ToggleBetween';
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <ChangeWithInput/>
+        <ToggleBetween/>
+        <ArrayUse/>
+        <Object/>
     </div>
   );
 }
-
 export default App;
